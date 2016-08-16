@@ -6,6 +6,8 @@
 
 ##如何使用DataBinding
 在项目build.gradle文件中添加开启dataBinding
+
+``` Java
 android {
     compileSdkVersion 24
     buildToolsVersion "23.0.1"
@@ -28,3 +30,4 @@ android {
         enabled true
     }
 }
+```
