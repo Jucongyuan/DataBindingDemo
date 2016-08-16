@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">DataBindingDemo</string>
+
+    <string name="home">首页</string>
+    <string name="hint_do_not_know_to_ask">不懂·问一问</string>
+    <string name="answerer">问客</string>
+    <string name="live">直播</string>
+    <string name="questions_and_answers">问答</string>
+    <string name="article">文章</string>
+    <string name="follow">关注</string>
+    <string name="browse">浏览</string>
+    <string name="authenticate">认证</string>
+
+    <string name="chat">聊天</string>
+
+    <string name="discover">发现</string>
+    <string name="me">我</string>
+
+    <string name="login_yiwen">登录一问</string>
+    <string name="login_yiwen_prompt">可以在线实时问答</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+
+    <string name="logout">退出登录</string>
+    <string name="certified_member">认证会员</string>
+    <string name="income">30天收入</string>
+    <string name="into_homepage">进入主页</string>
+    <string name="homepage_setting">主页设置</string>
+    <string name="follow_manager">关注管理</string>
+    <string name="question_manager">提问管理</string>
+    <string name="comment_reply">评论回复</string>
+    <string name="account_setting">账号设置</string>
+    <string name="order_manager">订单管理</string>
+    <string name="authenticate_manager">认证（电脑端认证）</string>
+    <string name="case_manager">案例（电脑端添加）</string>
+    <string name="wallet">钱包</string>
+    <string name="favorite_articles">收藏文章</string>
+    <string name="spread">推广</string>
+    <string name="help">帮助</string>
+
+
+    <string name="service">服务</string>
+
+    <string name="advisory">咨询</string>
+
+    <string name="local">本地</string>
+    <string name="online">在线</string>
+    <string name="free">空闲</string>
+
+    <string name="question">提问</string>
+    <string name="map">地图</string>
+    <string name="favorable_comment">好评</string>
+
+</resources>

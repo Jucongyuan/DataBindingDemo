@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="homeModel"
+            type="com.jucongyuan.databindingdemo.viewmodels.HomeModel"/>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="#50585d">
+
+            <ImageButton
+                android:id="@+id/btnAdd"
+                android:layout_width="42dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/shape_00a647_bg"
+                android:scaleType="center"
+                android:src="@mipmap/btn_add"/>
+
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="18dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/btnAdd"
+                android:layout_toRightOf="@id/btnAdd"
+                android:background="@drawable/shape_white_bg"
+                android:hint="@string/hint_do_not_know_to_ask"
+                android:maxLines="1"
+                android:paddingEnd="0dp"
+                android:addTextChangedListener="@{homeModel.searchWatcher}"
+                android:paddingLeft="14dp"
+                android:paddingRight="0dp"
+                android:paddingStart="14dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#474543"
+                android:textSize="16sp"/>
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="18dp"
+                android:onClick="@{() -> homeModel.searchClick()}"
+                android:layout_marginRight="18dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/btn_search"/>
+
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/rgTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbAnswerer"
+                style="@style/FirstTab"
+                android:background="@drawable/selector_first_tab"
+                android:text="@string/answerer"/>
+
+            <RadioButton
+                android:id="@+id/rbLive"
+                style="@style/FirstTab"
+                android:background="@drawable/selector_first_tab"
+                android:text="@string/live"/>
+
+            <RadioButton
+                android:id="@+id/rbQuesAndAns"
+                style="@style/FirstTab"
+                android:background="@drawable/selector_first_tab"
+                android:text="@string/questions_and_answers"/>
+
+            <RadioButton
+                android:id="@+id/rbArticle"
+                style="@style/FirstTab"
+                android:background="@drawable/selector_first_tab"
+                android:text="@string/article"/>
+
+        </RadioGroup>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpFirst"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</layout>
